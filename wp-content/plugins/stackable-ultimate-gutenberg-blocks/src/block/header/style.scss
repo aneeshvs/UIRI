@@ -1,0 +1,104 @@
+/**
+ * #.# Styles for Header Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+ .ugb-header.has-image {
+	 padding: 0;
+	 .ugb-header-section {
+		 padding: 9.5rem 4rem;
+		 background-size: cover;
+		 background-repeat: no-repeat;
+		 background-position: center;
+	 }
+ }
+.ugb-header {
+	text-align: center;
+	padding: 9.5rem 4rem;
+	position: relative;
+	.ugb-header-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.header-image {
+		height: 400px;
+		width: 600px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.wp-block-button.ugb-button-center {
+		left: 0;
+		transform: translateX(0);
+		margin-bottom: 1.5em;
+	}
+	.wp-block-button.ugb-button-right {
+		transform: translateX(-50%);
+    	left: 50%;
+		margin-bottom: 1.5em;
+	}
+	.wp-block-button.ugb-button-left {
+		transform: translateX(50%);
+		left: -50%;
+		margin-bottom: 1.5em;
+	}
+	.ugb-header-title {
+		margin-bottom: 1rem;
+		padding-bottom: 0;
+		margin-top: 0;
+		position: relative;
+	}
+	.ugb-header-subtitle {
+		margin-bottom: 2rem;
+		padding-bottom: 0;
+		position: relative;
+	}
+	button.components-button {
+		margin-bottom: .5em;
+		position: relative;
+	}
+	.wp-ugb-button {
+		position: relative;
+	}
+}
+
+.ugb-header-overlay.overlay-opacity.overlay-opacity-1 {
+	opacity: .1;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-2 {
+	opacity: .2;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-3 {
+	opacity: .3;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-4 {
+	opacity: .4;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-5 {
+	opacity: .5;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-6 {
+	opacity: .6;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-7 {
+	opacity: .7;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-8 {
+	opacity: .8;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-9 {
+	opacity: .9;
+}
+.ugb-header-overlay.overlay-opacity.overlay-opacity-10  {
+	opacity: 1;
+}
+
+/**
+ * Frontend Styles.
+ */
+.wp-block-ugb-header.has-no-content {
+	display: none
+}

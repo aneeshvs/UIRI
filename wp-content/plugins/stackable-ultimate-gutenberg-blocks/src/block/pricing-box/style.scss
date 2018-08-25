@@ -1,0 +1,127 @@
+/**
+ * #.# Styles for Pricing Box Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-pricing-box {
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	> div {
+		text-align: center;
+		margin: 0 auto;
+		p {
+			text-align: center;
+			padding-bottom: 0;
+		}
+	}
+	h3 {
+	 	margin: 0 0 2rem !important;
+		line-height: 100% !important;
+	}
+	.ugb-pricing-box-pricing {
+		font-size: 3.5em;
+		margin: 0 0 .5rem;
+		line-height: 100% !important;
+	}
+	.ugb-pricing-box-per-month-label {
+		font-size: .75em;
+		opacity: .3;
+		margin: 0 0 2rem;
+		text-transform: uppercase;
+		line-height: 100% !important;
+	}
+	.wp-ugb-button {
+		margin-bottom: 2rem;
+	}
+	.ugb-pricing-box-feature-list {
+		opacity: .5;
+		font-size: 1em;
+		line-height: 1.8em !important;
+		width: 40%;
+		margin: 0 auto;
+	}
+
+}
+.blocks-button__inline-link.pricing-box {
+	margin: 5px auto 0px auto;
+}
+.ugb-pricing-box.column-1 {
+	.ugb-pricing-box-column-two,
+	.ugb-pricing-box-column-three {
+		display: none;
+	}
+}
+.ugb-pricing-box.column-2 {
+	.ugb-pricing-box-feature-list {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.ugb-pricing-box-column-one {
+		margin-right: 2rem;
+	}
+	.ugb-pricing-box-column-two {
+		border-left: 1px solid #eee;
+	    margin-left: 0;
+	    padding-left: 2rem;
+	}
+	> div {
+		width: 50%;
+	}
+	.ugb-pricing-box-column-three {
+		display: none;
+	}
+	.blocks-button__inline-link {
+		width: 225px;
+	}
+}
+.ugb-pricing-box.column-3 {
+	> div {
+		width: 33.2%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	> div:first-child {
+		margin-left: 0;
+	}
+	> div:last-child {
+		margin-right: 0;
+	}
+	.ugb-pricing-box-column-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	    margin-left: 0;
+		margin-right: 0;
+	    padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.ugb-pricing-box-feature-list {
+		width: 100%;
+	}
+	.blocks-button__inline-link {
+		width: 181px;
+		.blocks-url-input {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.ugb-pricing-box.column-3.column-3 {
+		display: block;
+		> div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.ugb-pricing-box.column-2.column-2 {
+		display: block;
+		> div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}

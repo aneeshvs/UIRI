@@ -1,0 +1,22 @@
+/**
+ * #.# Styles for Count Up Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+ .ugb-countup {
+ 	text-align: center;
+	margin-bottom: 1em;
+ 	h4, div, p {
+ 		margin: 0 !important;
+ 		line-height: 1em;
+ 	}
+ 	h4 {
+ 		margin-bottom: 1em !important;
+ 	}
+ 	p {
+ 		margin-top: 1em !important;
+ 	}
+	.ugb-countup-hide {
+		visibility: hidden;
+	}
+ }

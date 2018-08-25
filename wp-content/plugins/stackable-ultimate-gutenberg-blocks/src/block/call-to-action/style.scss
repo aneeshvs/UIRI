@@ -1,0 +1,29 @@
+/**
+ * #.# Styles for CTA Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+ div.ugb-cta {
+	 text-align: center;
+	 padding: 4rem 2rem;
+	 background-color: #f4f4f4;
+	 .ugb-cta-title {
+		 margin: 0 0 1rem !important;
+	 }
+	 .ugb-cta-bodyText {
+		 opacity: .5;
+		 margin: 0 0 1.5rem;
+	 }
+	 .ugb-cta-button {
+	 	margin: 0;
+	 }
+	 .blocks-button__inline-link {
+		 margin: 0 auto;
+	 }
+	 p {
+		 text-align: center;
+	 }
+ }
+.wp-block-ugb-button .wp-ugb-button:hover {
+	color: white;
+}

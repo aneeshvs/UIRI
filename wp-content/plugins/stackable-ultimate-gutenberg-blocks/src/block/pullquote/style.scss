@@ -1,0 +1,27 @@
+/**
+ * #.# Styles for Pullquote Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+blockquote.ugb-pullquote {
+	border-top: 8px solid #2091e1;
+	border-bottom: 8px solid #2091e1;
+	border-left: none !important;
+	border-right: none !important;
+	text-align: center;
+    padding: 2rem;
+    margin: 1rem 0;
+    opacity: .5;
+	color: #2091e1;
+	font-size: 1.5em;
+	font-style: normal;
+	p {
+		margin: 0;
+		text-align: center;
+	}
+	&, p {
+		&:after, &:before {
+			display: none;
+		}
+	}
+}

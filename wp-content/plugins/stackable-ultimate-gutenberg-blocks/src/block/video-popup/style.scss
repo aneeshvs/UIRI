@@ -1,0 +1,75 @@
+/**
+ * #.# Styles for Video Popup Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.video-popup-image {
+    height: 220px;
+    width: 220px;
+    background-position: center;
+    background-size: cover;
+	margin-bottom: 10px;
+}
+
+.ugb-video-popup {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+	.ugb-video-preview, a, .ugb-video-overlay, .ugb-play-button {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.ugb-video-preview {
+		background-size: cover;
+		background-position: center;
+		opacity: .4;
+		transition: all .3s ease-in-out;
+		z-index: 1;
+	}
+	&:hover .ugb-video-preview {
+		opacity: .5;
+	}
+	.ugb-video-wrapper {
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%;
+		border: 0 !important;
+	    box-shadow: none !important;
+	}
+	a, .ugb-video-overlay {
+		z-index: 3;
+		box-shadow: none !important;
+		background: transparent !important;
+		display: block !important;
+	}
+	.ugb-play-button {
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	svg {
+		fill: #fff !important;
+	}
+	button.components-button.button {
+		position: absolute;
+		z-index: 4;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 30%;
+		&:active {
+			transform: translateX(-50%);
+		}
+	}
+}
+
+/**
+ * Frontend Styles.
+ */
+.wp-block-ugb-video-popup {
+}

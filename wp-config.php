@@ -18,39 +18,21 @@
  * @package WordPress
  */
 
-//Using environment variables for DB connection information
-
-$connectstr_dbhost = '';
-$connectstr_dbname = '';
-$connectstr_dbusername = '';
-$connectstr_dbpassword = '';
-
-foreach ($_SERVER as $key => $value) {
-    if (strpos($key, "MYSQLCONNSTR_") !== 0) {
-        continue;
-    }
-    
-    $connectstr_dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
-}
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', $connectstr_dbname);
+define('DB_NAME', 'uiri1');
 
 /** MySQL database username */
-define('DB_USER', $connectstr_dbusername);
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', $connectstr_dbpassword);
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', $connectstr_dbhost);
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -64,24 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
-
-/* Security for Wordpress : 
-you may wish to disable the plugin or theme editor to prevent overzealous users from being able to edit sensitive files and 
-potentially crash the site. Disabling these also provides an additional layer of security if a hacker gains access to a 
-well-privileged user account.
-Note : If your plugin or theme you use with your app requires editing of the files , comment the line below for 'DISALLOW_FILE_EDIT'
-*/
-define('DISALLOW_FILE_EDIT', true);
-
+define('AUTH_KEY',         'eH?k{QpYYGoC^t$ed4m=+E xo+6?rY3_YJ>sYe: 5>I(i-uG!@u@d!5^z55#ZFxO');
+define('SECURE_AUTH_KEY',  '[wiWc,1~e-Iz|g7rMa nCo|08V#V.H:Vt$fIT<Jmgox=_SnXF$b~J^0)Gm%IE*F[');
+define('LOGGED_IN_KEY',    'V{g1Rd[%B65z!5]%PhcogDR+jRw252yrX~Qn9c#,<Oiy[u`6?Jn 3qn7;wa+VJ`e');
+define('NONCE_KEY',        'A>r*IS>014Ih:vJ_#{6B59)S9^N a3|NK.F!XOGEgOqzoxa9,S}b,Cg(gY{rB>)E');
+define('AUTH_SALT',        'R>ay#H>k,[zMTRry6`o)2C9uBe~C,&{.o`C$&Wuk~|DR4pa$ux>r(@/hGNxd4O]Y');
+define('SECURE_AUTH_SALT', ']u;#H&VFepZ[_Xh5^D/sdG[D3mD/6GJN[@WL2 ,@.gP+<3;!8MjWk9rW%5X^6s)(');
+define('LOGGED_IN_SALT',   'tU1OLL.rkMF+tC7QwT@a{!mc:>?-EL7)9H[I}T@TLWMgSl`Od,`=$j=v<eHk~rC;');
+define('NONCE_SALT',       '_I%77h>ohKTTn%8n* A=O+ye^Gcou- 6%2z2~pU8Wv)JyF&{4wvg<,`7k2]pFHDl');
 
 /**#@-*/
 
@@ -108,13 +80,6 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
-
-//Relative URLs for swapping across app service deployment slots 
-define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-define('WP_CONTENT_URL', '/wp-content');
-define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )

@@ -1,0 +1,22 @@
+/**
+ * #.# Editor Styles for Video Popup Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+form.ugb-video-popup-link {
+	flex-wrap: wrap;
+	margin: 5px auto;
+	> svg, > button {
+		flex-shrink: 0;
+	}
+	.editor-url-input {
+		flex: 1;
+	}
+	> p {
+		width: 100%;
+    	flex-grow: 1;
+		font-size: .8em;
+		margin: 0 0 0 30px;
+	}
+}

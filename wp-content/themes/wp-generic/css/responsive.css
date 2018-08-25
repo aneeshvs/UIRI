@@ -1,0 +1,774 @@
+@media screen and (max-width: 1210px) {
+	.boxed #page {
+		width: 95%;
+	}
+	.ed-container {
+		width: 100%;
+	}
+	.site-header #top-header, #main-header, .team-section, .service-section, .portfolio-section, .blog-section, .cta-section, .pricing-section, 
+	.testimonial-section, .top-footer, .bottom-footer, .skill-section, .no-sidebar #primary {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.boxed #main-header .main-navigation ul li a {
+	    padding-left: 12px;
+	    padding-right: 12px;
+	}
+	.right-sidebar #primary, .left-sidebar #secondary, 
+	.both-sidebar .left-sidebar-right {
+	    padding-left: 10px;
+	}
+	.right-sidebar #secondary, .left-sidebar #primary, .both-sidebar #secondary {
+	    padding-right: 10px;
+	}
+	.center #main-header .search-icon .ed-search {
+		margin-top: 17px;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	/*-----------------------------------------
+	HEADER SECTION
+	-----------------------------------------*/
+	#main-header .main-navigation ul li {
+		font-size: 13px;
+	}
+	#main-header .main-navigation ul li a {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.boxed #main-header .main-navigation ul li a {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+
+	/*-----------------------------------------
+	PORTFOLIO SECTION
+	-----------------------------------------*/
+	.portfolio-section .portfolio-post-wrap {
+		padding: 0;
+	}
+
+	/*-------------------------------------------------
+	WIDGET PRICING TABLE
+	------------------------------------------------*/
+	.widget_wp_generic_pricing .ed-price .ed-currency, 
+	.widget_wp_generic_pricing .ed-price .ed-amount .amount-decimal {
+		font-size: 20px;
+	}
+	.widget_wp_generic_pricing .ed-price .ed-amount {
+		font-size: 40px;
+	}
+
+	/*-------------------------------------------
+	TESTIMONIAL SECTION
+	-------------------------------------------*/
+	.testimonial-section .bx-wrapper .bx-controls-direction a.bx-prev {
+		left: -35px;
+	}
+	.testimonial-section .bx-wrapper .bx-controls-direction a.bx-next {
+		right: -35px;
+	}
+
+}
+
+@media screen and (max-width: 1096px) {
+	/*-----------------------------------------
+	HEADER SECTION
+	-----------------------------------------*/
+	#main-header .site-branding {
+		width: 19%;
+	}
+	#main-header .main-navigation {
+		width: 80%;
+	}
+
+	/*-------------------------------------------
+	TESTIMONIAL SECTION
+	-------------------------------------------*/
+	.testimonial-section .bx-wrapper .bx-controls-direction a.bx-prev {
+		left: -40px;
+	}
+	.testimonial-section .bx-wrapper .bx-controls-direction a.bx-next {
+		right: -40px;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+	/*--------------------------------------
+	HEADER SECTION
+	--------------------------------------*/
+	#main-header .site-branding {
+		width: 50%;
+	}
+	#main-header .main-navigation {
+		width: 49%;
+		text-align: right;
+	}
+	#main-header .main-navigation > div.ed-search-wrap {
+		width: auto;
+	}
+	#main-header .search-icon .ed-search {
+		margin-top: 20px;
+	}
+	#top-header .header-text > div {
+		font-size: 13px;
+		padding-right: 15px;
+	}
+	
+	/*--------------------------------------
+	MAIN NAVIGATION
+	--------------------------------------*/
+	#main-header .main-navigation .menu-toggle {
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 35px;
+	    height: 35px;
+	    text-align: center;
+	    padding: 0;
+	    position: relative;
+	    line-height: 35px;
+	    text-indent: 50px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	#main-header .main-navigation .menu-toggle::after {
+	    content: "\f0c9";
+	    font-family: fontawesome;
+	    font-size: 21px;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    text-indent: 0;
+	}
+	#main-header .main-navigation.toggled .menu-toggle {
+	    position: fixed;
+	    z-index: 999999;
+	    top: 10px;
+	    left: 10px;
+	}
+	#main-header .main-navigation.toggled .menu-toggle:after {
+		content: "\f00d";
+	}
+	#main-header .main-navigation .menu-toggle.hide {
+		top: -100%;
+	}
+	#main-header .main-navigation > div {
+	    text-align: left;
+	}
+	#main-header .main-navigation .menu-toggle + div {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    background: #333;
+	    z-index: 99999;
+	    width: 50%;
+	    height: 100%;
+	    overflow-y: scroll;
+	    padding-top: 60px;
+	    opacity: 0;
+	    visibility: hidden;
+	    transform: translate(-100%);
+	    -webkit-transform: translate(-100%);
+	    -moz-transform: translate(-100%);
+	    transition: all ease 0.35s;
+	    -webkit-transition: all ease 0.35s;
+	    -moz-transition: all ease 0.35s;
+	}
+	#main-header .main-navigation.toggled .menu-toggle + div {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	    visibility: visible;
+	    transform: translate(0);
+	    -webkit-transform: translate(0);
+	    -moz-transform: translate(0);
+	}
+	#main-header .main-navigation ul li {
+	    display: block;
+	    font-size: 14px;
+	}
+	#main-header .main-navigation ul li a {
+	    color: #fff;
+	    padding: 12px 15px;
+	    border-bottom: 1px solid #444;
+	    width: 100%;
+	}
+	.boxed #main-header .main-navigation ul li a {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	#main-header .main-navigation ul li a:after {
+		display: none;
+	}
+	#main-header .main-navigation ul li.menu-item-has-children a, 
+	#main-header .main-navigation ul li.page_item_has_children a {
+	    padding-right: 30px;
+	}
+	#main-header .main-navigation ul li.menu-item-has-children .sub-click, 
+	#main-header .main-navigation ul li.page_item_has_children .sub-click {
+	   top: 0;
+	    color: #fff;
+	    right: 0;
+	    cursor: pointer;
+	    background: #444;
+	    width: 25px;
+	    text-align: center;
+	    height: 45px;
+	    line-height: 43px;
+	    font-size: 12px;
+	    transition: all ease 0.35s;
+	    -webkit-transition: all ease 0.35s;
+	    -moz-transition: all ease 0.35s;
+	}
+	#main-header .main-navigation ul li.menu-item-has-children .sub-click:hover, 
+	#main-header .main-navigation ul li.page_item_has_children .sub-click:hover {
+		background: #555;
+	}
+	#main-header .main-navigation ul li ul li.menu-item-has-children > .sub-click, 
+	#main-header .main-navigation ul li ul li.page_item_has_children > .sub-click {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		top: 0;
+		right: 0;
+		height: 49px;
+    	line-height: 49px;
+	}
+	#main-header .main-navigation ul li ul {
+	    position: static;
+	    width: 100%;
+	    background: #444;
+	    border-left: 1px solid #999;
+	}
+	#main-header .main-navigation ul li ul li a {
+		border-bottom-color: #333;
+	}
+
+	/*------------------------------------------------
+	LOGO CENTER
+	------------------------------------------------*/
+	.center #main-header .main-navigation {
+		margin-bottom: 10px;
+	}
+	.center #main-header .main-navigation ul li ul {
+		text-align: center;
+	}
+	.center #main-header .search-icon .ed-search {
+	    margin-top: 10px;
+	}
+
+	/*------------------------------------------------
+	LOGO RIGHT
+	------------------------------------------------*/
+	.right #main-header .site-branding {
+		width: 75%;
+	}
+	.right #main-header .main-navigation {
+		width: 25%;
+	}
+	.right #main-header .main-navigation .menu-toggle {
+	    margin-top: 19px;
+	}
+	.right #main-header .main-navigation.toggled .menu-toggle {
+		margin-top: 0;
+	}
+	
+	/*------------------------------------------------
+	MAIN SLIDER SECTION
+	------------------------------------------------*/
+	#ed-slider .caption-wrapper .slider-caption {
+	    width: 100%;
+	    padding: 0 10px;
+	}
+	#ed-slider .caption-wrapper .slider-caption .slider-title {
+		font-size: 3.5em;
+	}
+
+	/*--------------------------------------------
+	PORTFOLIO SECTION
+	--------------------------------------------*/
+	.portfolio-section .portfolio-content-wrap {
+		width: 33.33%;
+	}
+	.testimonial-slider .testimonial-content-wrap figure {
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
+	}
+
+	/*-------------------------------------------
+	PRICING TABLE SECTION
+	-------------------------------------------*/
+	.pricing-widget .widget_wp_generic_pricing {
+	    width: 48%;
+	}
+	.pricing-widget .widget_wp_generic_pricing:nth-child(4n) {
+	    margin-right: 3%;
+	}
+	.pricing-widget .widget_wp_generic_pricing:nth-child(2n) {
+	    margin-right: 0;
+	}
+
+	/*-------------------------------------------------
+	WIDGET PRICING TABLE
+	------------------------------------------------*/
+	.widget_wp_generic_pricing .ed-price .ed-currency, 
+	.widget_wp_generic_pricing .ed-price .ed-amount .amount-decimal {
+		font-size: 40px;
+	}
+	.widget_wp_generic_pricing .ed-price .ed-amount {
+		font-size: 60px;
+	}	
+
+}
+
+@media screen and (max-width: 800px) {
+	/*------------------------------------------------
+	MAIN SLIDER SECTION
+	------------------------------------------------*/
+	#ed-slider .caption-wrapper .slider-caption .slider-title {
+		font-size: 2.5em;
+	}
+	#ed-slider .caption-wrapper .slider-caption .slider-viewmore.ed-bttn {
+		margin-top: 10px;
+		padding: 10px 20px;
+	}
+
+	/*-------------------------------------------
+	SERVICE SECTION
+	-------------------------------------------*/
+	.service-content-wrap {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.service-content-wrap:nth-last-of-type(1), 
+	.service-content-wrap:nth-last-of-type(2) {
+		margin-bottom: 0;
+	}
+
+	/*----------------------------------------------
+	SIDEBARS
+	----------------------------------------------*/
+	.left-sidebar #primary, .left-sidebar #secondary, 
+	.right-sidebar #primary, .right-sidebar #secondary, 
+	.both-sidebar .left-sidebar-right, .both-sidebar #secondary, 
+	.both-sidebar .left-sidebar-right #primary, 
+	.both-sidebar .left-sidebar-right #secondary {
+	    float: none;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    width: 100%;
+	    margin-bottom: 40px;
+	}
+
+	/*--------------------------------------------------
+	PORTFOLIO PAGE
+	--------------------------------------------------*/
+	.no-sidebar .portfolio article, .both-sidebar .portfolio article {
+	    width: 32%;
+	}
+	.no-sidebar .portfolio article:nth-child(4n), .both-sidebar .portfolio article:nth-child(2n) {
+	    margin-right: 2%;
+	}
+	.no-sidebar .portfolio article:nth-child(3n), .both-sidebar .portfolio article:nth-child(3n) {
+	    margin-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.slider-section, .team-section, .skill-section, .service-section, .portfolio-section, .blog-section, .cta-section, .pricing-section, 
+	.testimonial-section {
+	    margin-bottom: 50px;
+	}
+	.section-title {
+		font-size: 25px;
+	}
+	.section-content {
+	    font-size: 14px;
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+
+	/*------------------------------------------------
+	SKILL SECTION
+	------------------------------------------------*/
+	.skill-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	/*--------------------------------------------
+	PORTFOLIO SECTION
+	--------------------------------------------*/
+	.portfolio-section .portfolio-content-wrap {
+		width: 50%;
+	}
+
+	/*--------------------------------------------
+	ARCHIVE GRID PAGE
+	--------------------------------------------*/
+	.no-sidebar .archive.grid article {
+	    width: 48%;
+	}
+	.no-sidebar .archive.grid article:nth-child(3n) {
+	    margin-right: 3%;
+	}
+	.no-sidebar .archive.grid article:nth-child(2n) {
+	    margin-right: 0;
+	}
+
+	/*---------------------------------------------
+	CLIENT SECTION
+	---------------------------------------------*/
+	.client-section .client-slider figure {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.client-section .client-slider figure img {
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	#top-header .header-text > div {
+		font-size: 14px;
+		padding-right: 25px;
+	}
+	#main-header .main-navigation .menu-toggle + div {
+		width: 80%;
+	}
+	/*------------------------------------------------
+	MAIN SLIDER SECTION
+	------------------------------------------------*/
+	#ed-slider .caption-wrapper .slider-caption .slider-title {
+		font-size: 1.3em;
+	}
+	#ed-slider .caption-wrapper .slider-caption .slider-content {
+	    font-size: 16px;
+	    line-height: 22px;
+	    margin-top: 15px;
+	}
+	#ed-slider .caption-wrapper .slider-caption .slider-viewmore.ed-bttn {
+	    font-size: 12px;
+	    padding: 5px 10px;
+	    margin-top: 0px;
+	}
+
+	/*----------------------------------------------
+	TEAM SECTION
+	----------------------------------------------*/
+	.team-section .team-content-wrap {
+	    float: none;
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	}
+	.team-section .team-content-wrap:last-child {
+		margin-bottom: 0;
+	}
+	.team-section .team-content-wrap .team-content.post-content .team-post-bttn.readmore-bttn {
+		font-size: 12px;
+		padding-right: 15px;
+	}
+	.team-section .team-content-wrap .team-content.post-content .team-post-bttn.readmore-bttn::after {
+		font-size: 16px;
+		top: -6px;
+	}
+
+	/*-----------------------------------------
+	SKILL SECTION
+	-----------------------------------------*/
+	.skill-section {
+		padding: 0;
+	}
+	.skill-section::before, .skill-section::after {
+		display: none;
+	}
+	.skill-section .section-desc {
+	    float: none;
+	    width: 100%;
+	    padding: 30px 10px;
+	    background: #f5f5f5;
+	}
+	.skill-section .skill-widget {
+	    float: none;
+	    width: 100%;
+	    padding: 30px 10px;
+	    background: #fafafa;
+	}
+
+	/*-------------------------------------------
+	BLOG SECTION
+	-------------------------------------------*/
+	.blog-post-wrap .blog-content-wrap {
+	    float: none;
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	}
+	.blog-post-wrap .blog-content-wrap:last-child {
+		margin-bottom: 0;
+	}
+	.blog-section .blog-post-title {
+		font-size: 16px;
+	}
+	.blog-section .bottom-comment .blog-post-bttn {
+		font-size: 12px;
+		padding-right: 15px;
+	}
+	.blog-section .bottom-comment .blog-post-bttn::after {
+	    font-size: 16px;
+	    top: -4px;
+	}
+
+	/*------------------------------------------
+	CALL TO ACTION SECTION
+	------------------------------------------*/
+	.cta-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.cta-section .section-content {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	/*------------------------------------------
+	PRICING SECTION
+	------------------------------------------*/
+	.pricing-widget .widget_wp_generic_pricing {
+	    float: none;
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	}
+	.pricing-widget .widget_wp_generic_pricing:last-child {
+		margin-bottom: 0;
+	}
+
+	/*-------------------------------------------
+	FOOTER SECTION
+	-------------------------------------------*/
+	.top-footer {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.top-footer .footer-block {
+	    float: none;
+	    padding: 0;
+	    margin-bottom: 30px;
+	}
+	.top-footer .footer-block:last-child {
+		margin-bottom: 0;
+	}
+	.top-footer .footer-block::after {
+		display: none;
+	}
+	.top-footer.footer-column-3 .footer-block, 
+	.top-footer.footer-column-2 .footer-block {
+	    width: 100%;
+	}
+	.bottom-footer .site-info {
+	    float: none;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.bottom-footer .footer-social, .bottom-footer .footer-menu {
+	    float: none;
+	    width: 100%;
+	    text-align: left;
+	}
+	.bottom-footer .footer-menu ul li a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	/*-----------------------------------------
+	PORTFOLIO PAGE
+	-----------------------------------------*/
+	.no-sidebar .portfolio article, .both-sidebar .portfolio article, 
+	.right-sidebar .portfolio article, .left-sidebar .portfolio article {
+	    width: 49%;
+	}
+	.no-sidebar .portfolio article:nth-child(3n), .both-sidebar .portfolio article:nth-child(3n), 
+	.right-sidebar .portfolio article:nth-child(3n), .left-sidebar .portfolio article:nth-child(3n) {
+	    margin-right: 2%;
+	}
+	.no-sidebar .portfolio article:nth-child(2n), .both-sidebar .portfolio article:nth-child(2n), 
+	.right-sidebar .portfolio article:nth-child(2n), .left-sidebar .portfolio article:nth-child(2n) {
+	    margin-right: 0;
+	}
+
+	/*------------------------------------------
+	ARCHIVE GRID VIEW
+	------------------------------------------*/
+	.archive.grid article, .no-sidebar .archive.grid article {
+	    float: none;
+	    margin-right: 0;
+	    width: 100%;
+	}
+
+	/*-----------------------------------------
+	TESTIMONIAL PAGE
+	-----------------------------------------*/
+	.archive.testimonial.grid article {
+		margin-bottom: 90px;
+	}
+	.archive.testimonial.grid article:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+	/*---------------------------------
+	HEADER SECTION
+	---------------------------------*/
+	#top-header .header-text, #main-header .site-branding, #main-header .main-navigation {
+		width: 100%;
+	}
+	#top-header .header-text > div {
+		padding-right: 15px;
+	}
+	#top-header .header-text + .social-icons {
+	    width: 100%;
+	    text-align: left;
+	}
+	#top-header .social-icons a {
+		font-size: 14px;
+	}
+	#main-header .main-navigation > div.ed-search-wrap {
+	    width: calc(100% - 42px);
+	    text-align: right;
+	    margin-left: 0;
+	}
+	#main-header .main-navigation.toggled > div.ed-search-wrap {
+		width: 100%;
+	}
+	#main-header .search-icon .ed-search {
+	    width: 300px;
+	    margin-top: 10px;
+	}
+	#main-header .main-navigation {
+	    margin-bottom: 10px;
+	}
+
+	/*--------------------------------------------
+	SERVICE SECTION
+	--------------------------------------------*/
+	.service-content-wrap {
+	    float: none;
+	    width: 100%;
+	    padding: 0;
+	    margin-bottom: 30px;
+	}
+	.service-content-wrap:nth-last-of-type(2) {
+		margin-bottom: 30px;
+	}
+	.service-content-wrap:last-child {
+		margin-bottom: 0;
+	}
+
+	/*-------------------------------------------
+	PORTFOLIO SECTION
+	-------------------------------------------*/
+	.portfolio-section .portfolio-content-wrap {
+	    float: none;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+	.portfolio-section .portfolio-content.post-content {
+		left: 0;
+		right: 0;
+	}
+
+	/*-------------------------------------------
+	PORTFOLIO PAGE
+	-------------------------------------------*/
+	.portfolio article {
+		float: none;
+		margin-right: 0;
+	}
+	.no-sidebar .portfolio article, .both-sidebar .portfolio article, 
+	.right-sidebar .portfolio article, .left-sidebar .portfolio article {
+		width: 100%;
+	}
+
+	/*-------------------------------------------
+	ARCHIVE LIST VIEW
+	-------------------------------------------*/
+	.archive.list article figure, .archive.list article .entry-content {
+	    float: none;
+	    width: 100%;
+	}
+
+	/*-----------------------------------------
+	SEARCH NO RESULT PAGE
+	-----------------------------------------*/
+	.search-no-results .page-content .search-form label {
+	    float: none;
+	    padding-right: 0;
+	    width: 100%;
+	}
+	.search-no-results .page-content .search-form .search-submit {
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	/*-------------------------------------------
+	ERROR 404 PAGE
+	--------------------------------------------*/
+	.error-404-text p {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	.error-404-text h1 {
+		font-size: 8em;
+	}
+
+	/*---------------------------------------------
+	CONTACT PAGE
+	---------------------------------------------*/
+	.ufbl-default-template input.ufbl-math-captcha-ans {
+	    width: 50% !important;
+	}
+
+	/*--------------------------------------------
+	COMMENTS AREA
+	--------------------------------------------*/
+	.comments-area ol.children {
+	    padding-left: 10px;
+	}
+	.comment-form .comment-form-author, 
+	.comment-form .comment-form-email, 
+	.comment-form .comment-form-url {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	/*------------------------------------------------
+	LOGO RIGHT
+	------------------------------------------------*/
+	.right #main-header .main-navigation > div.ed-search-wrap {
+		width: auto;
+	}
+
+	/*--------------------------------------------
+	CLIENT SECTION
+	--------------------------------------------*/
+	.client-section .client-slider figure {
+	    float: none;
+	    margin-bottom: 20px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 0;
+	    text-align: center;
+	    width: 80%;
+	}
+	.client-section .client-slider figure img {
+		width: 75%;
+	}
+
+}

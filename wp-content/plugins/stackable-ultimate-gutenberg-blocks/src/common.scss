@@ -1,0 +1,30 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+.gutenberg {
+	.ugb-editor-label {
+		font-size: 12px;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+	    color: #8e979e;
+		padding: 2em 0 0;
+	    background: #fff;
+	    border: none;
+	    box-shadow: none;
+	    white-space: nowrap;
+		display: block;
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+}
+[class*="ugb-"] form[class*="-link"], form[class*="ugb-"][class*="-link"], [class*="ugb-"] + form[class*="-link"] {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}

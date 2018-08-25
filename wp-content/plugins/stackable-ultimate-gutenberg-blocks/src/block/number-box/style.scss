@@ -1,0 +1,98 @@
+/**
+ * #.# Styles for Number Box Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-number-box {
+	display: flex;
+	margin: 1rem 0;
+	span, .blocks-rich-text span {
+		background-color: #ddd;
+	    border-radius: 100%;
+	    font-size: 3em;
+	    display: block;
+	    padding: 0;
+	    text-align: center;
+	    overflow: hidden;
+	    margin: 0 auto;
+		/* size */
+		height: 2.5em;
+	    width: 2.5em;
+		line-height: 2.5em !important;
+	}
+	> div {
+		text-align: center;
+		margin: 0 auto;
+		p {
+			text-align: center;
+		}
+	}
+}
+ .ugb-number-box {
+	 .ugb-number-box-name,
+	 .ugb-number-box-name-two,
+	 .ugb-number-box-name-three {
+		 margin: 1.3rem 0 1rem;
+	 }
+	 .ugb-number-box-body,
+	 .ugb-number-box-body-two,
+	 .ugb-number-box-body-three {
+		 opacity: .5;
+		 margin: 0 0 1rem;
+		 left: 0;
+	 }
+ }
+
+.ugb-number-box.column-1 {
+	.ugb-number-box-column-two,
+	.ugb-number-box-column-three {
+		display: none;
+	}
+}
+.ugb-number-box.column-2 {
+	.ugb-number-box-column-one {
+		margin-right: 1rem;
+	}
+	.ugb-number-box-column-two {
+		margin-left: 1rem;
+	}
+	> div {
+		width: 50%;
+	}
+	.ugb-number-box-column-three {
+		display: none;
+	}
+}
+.ugb-number-box.column-3 {
+	> div {
+		width: 33.2%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	> div:first-child {
+		margin-left: 0;
+	}
+	> div:last-child {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.ugb-number-box.column-3.column-3 {
+		display: block;
+		> div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.ugb-number-box.column-2.column-2 {
+		display: block;
+		> div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}

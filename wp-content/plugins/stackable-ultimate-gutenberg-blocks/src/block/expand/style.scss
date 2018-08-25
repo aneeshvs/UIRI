@@ -1,0 +1,19 @@
+/**
+ * #.# Styles for Toggle Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-ugb-expand {
+	p:last-child {
+		margin-bottom: 0;
+	}
+	&.ugb-more {
+		.ugb-expand-less-text, .ugb-expand-more {
+			display: none;
+		}
+		.ugb-expand-more-text, .ugb-expand-less {
+			display: inline !important;
+		}
+	}
+}

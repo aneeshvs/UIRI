@@ -1,0 +1,23 @@
+/**
+ * #.# Styles for Header Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-blockquote {
+	border: 0;
+	border-left: 8px solid #2091e1;
+	padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    opacity: .5;
+	font-style: italic;
+	text-align: inherit;
+	background: transparent;
+	p {
+		margin: 0;
+	}
+	&, p {
+		&:after, &:before {
+			display: none;
+		}
+	}
+}

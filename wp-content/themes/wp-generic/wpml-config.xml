@@ -1,0 +1,37 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_wp-generic">
+            <key name="wp_generic_header_topheader_text" />
+            <key name="wp_generic_header_topheader_call" />
+            <key name="wp_generic_header_topheader_mail" />
+            <key name="wp_generic_header_search_placeholder" />
+            <key name="wp_generic_header_search_text" />
+            <key name="wp_generic_theme_category_slider" />
+            <key name="wp_generic_theme_category_blog" />
+            <key name="wp_generic_theme_category_portfolio" />
+            <key name="wp_generic_theme_category_service" />
+            <key name="wp_generic_theme_category_team" />
+            <key name="wp_generic_theme_category_testimonial" />
+            <key name="wp_generic_theme_category_client" />
+            <key name="wp_generic_homepage_service_page" />
+            <key name="wp_generic_homepage_service_readmore" />
+            <key name="wp_generic_homepage_skill_page" />
+            <key name="wp_generic_homepage_skill_readmore_link" />
+            <key name="wp_generic_homepage_team_page" />
+            <key name="wp_generic_homepage_team_readmore" />
+            <key name="wp_generic_homepage_portfolio_page" />            
+            <key name="wp_generic_homepage_blog_page" />
+            <key name="wp_generic_homepage_blog_readmore" />
+            <key name="wp_generic_homepage_cta_page" />
+            <key name="wp_generic_homepage_cta_readmore" />
+            <key name="wp_generic_homepage_cta_readmore_link" />
+            <key name="wp_generic_homepage_pricing_page" />
+            <key name="wp_generic_homepage_testimonial_page" />
+            <key name="wp_generic_homepage_client_page" />
+            <key name="wp_generic_footer_copyright_text" />
+            <key name="wp_generic_innerpage_blog_readmore" />
+            <key name="wp_generic_innerpage_team_readmore" />
+            <key name="wp_generic_innerpage_archive_readmore" />
+        </key>
+    </admin-texts>
+</wpml-config>

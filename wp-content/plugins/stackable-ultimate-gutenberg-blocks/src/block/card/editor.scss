@@ -1,0 +1,24 @@
+/**
+ * #.# Editor Styles for Card Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.edit-post-visual-editor {
+ 	.ugb-card {
+ 		.ugb-card-image-container {
+ 			padding: 0;
+ 		}
+		margin: 0 !important;
+		button {
+			margin: 0 30px;
+		}
+		&.has-image {
+			button {
+				width: 100%;
+				height: 300px;
+				padding: 0;
+			}
+		}
+ 	}
+ }

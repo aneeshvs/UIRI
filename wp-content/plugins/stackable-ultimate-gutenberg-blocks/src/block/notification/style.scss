@@ -1,0 +1,65 @@
+/**
+ * #.# Styles for Toggle Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-ugb-notification {
+	position: relative;
+}
+.wp-ugb-notif {
+	border-radius: 4px;
+	padding: 1.3em 1.5em;
+	color: #ffffff;
+}
+.notif-success {
+	background-color: #40ba7b;
+}
+.notif-error {
+	background-color: #d9534f;
+}
+.notif-warning {
+	background-color: #ffdd57;
+	color: #424242;
+}
+.notif-info {
+	background-color: #2091e1;
+}
+
+.ugb-notification, .wp-block-ugb-notification {
+	position: relative;
+	.close-button {
+		position: absolute;
+		right: 0;
+		z-index: 2;
+		margin-right: 1.5rem;
+		margin-top: 1.3rem;
+		font-size: 8px;
+	    padding-top: .3rem;
+		cursor: pointer;
+		svg {
+			width: 13px;
+			height: auto;
+		}
+	}
+}
+
+.ugb-notification.dismissible-true {
+	.wp-ugb-notif {
+		padding-right: 4rem;
+	}
+}
+
+.ugb-notification.type-success svg,
+.ugb-notification.type-error svg,
+.ugb-notification.type-info svg {
+	fill: #ffffff;
+}
+
+.ugb-notification.type-warning svg {
+	fill: #424242;
+}
+
+.ugb-notification.dismissible-true[data-uid] {
+	display: none;
+}

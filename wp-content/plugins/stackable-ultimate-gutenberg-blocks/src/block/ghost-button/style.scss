@@ -1,0 +1,33 @@
+/**
+ * #.# Styles for Ghost Button Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-ghost-button {
+
+}
+
+.wp-block-ugb-ghost-button.ugb-button-right {
+	margin: 10px 0;
+	text-align: right;
+}
+.wp-block-ugb-ghost-button.ugb-button-center {
+	margin: 10px 0;
+	text-align: center;
+}
+.wp-block-ugb-ghost-button.ugb-button-left {
+	margin: 10px 0;
+	text-align: left;
+}
+
+.wp-block-button .wp-ugb-button.ugb-ghost-button,
+.wp-block-ugb-ghost-button .wp-ugb-button.ugb-ghost-button {
+	background-color: transparent;
+	border: 2px solid #2091e1;
+	color: #2091e1;
+	&:hover {
+		opacity: .85;
+		box-shadow: none !important;
+		color: #2091e1;
+	}
+}

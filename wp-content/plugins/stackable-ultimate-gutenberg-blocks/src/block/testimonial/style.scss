@@ -1,0 +1,109 @@
+/**
+ * #.# Styles for CTA Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.ugb-testimonial {
+	display: flex;
+	.testimonial-image {
+		height: 75px;
+		width: 75px;
+	    background-size: cover;
+	    background-position: center;
+		border-radius: 100%;
+		margin: 0 auto 1.3rem;
+	}
+	.quote-icon {
+		height: 75px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+		svg {
+			height: 50px;
+			width: auto;
+			fill: #e6e6e6;
+		}
+	}
+	> div {
+		text-align: center;
+		padding: 1rem 0;
+		margin: 0 auto;
+		p {
+			text-align: center;
+		}
+	}
+	h4 {
+	 	margin: 0 0 .5rem !important;
+	}
+}
+ .ugb-testimonial {
+	 .ugb-testimonial-position,
+	 .ugb-testimonial-position-two,
+	 .ugb-testimonial-position-three {
+		 opacity: .3;
+		 font-size: .75em;
+		 margin: 0 0 1rem;
+		 text-transform: uppercase;
+	 }
+	 .ugb-testimonial-body,
+	 .ugb-testimonial-body-two,
+	 .ugb-testimonial-body-three {
+		 opacity: .5;
+		 margin: 0 0 1rem;
+		 left: 0;
+	 }
+ }
+
+.ugb-testimonial.column-1 {
+	.ugb-testimonial-column-two,
+	.ugb-testimonial-column-three {
+		display: none;
+	}
+}
+.ugb-testimonial.column-2 {
+	.ugb-testimonial-column-one {
+		margin-right: 1rem;
+	}
+	.ugb-testimonial-column-two {
+		margin-left: 1rem;
+	}
+	> div {
+		width: 50%;
+	}
+	.ugb-testimonial-column-three {
+		display: none;
+	}
+}
+.ugb-testimonial.column-3 {
+	> div {
+		width: 33.2%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	> div:first-child {
+		margin-left: 0;
+	}
+	> div:last-child {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.ugb-testimonial.column-3.column-3 {
+		display: block;
+		> div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.ugb-testimonial.column-2.column-2 {
+		display: block;
+		> div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
