@@ -23,13 +23,13 @@
 define('DB_NAME', 'uiri1');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'mysqldbuser@uiri-mysqldbserver');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'letmelogin2#');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'uiri-mysqldbserver.mysql.database.azure.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
